@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ПОВТОРЕНИЕ!</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+
+
+
+   <h1 class="title">ЧЕК-ЛИСТ ПОВТОРЕНИЯ!!! Усего: <span id="count222"></span></h1>
+
+   <div class="coop">
+   
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Определить четность числа</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function isEven(n) {
+                     if (n % 2 === 0) {
+                        return 'chetnoe';
+                     } else {
+                        return 'ne chetnoe';
+                     }
+                  }
+               </pre>
+               <span class="text">Любое четное число при делении на 2 не дает остатка или дает улевой остаток</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Извлечение корня из числа</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer">Проговори</textarea>
+            <div class="con">
+               <pre class="correct"></pre>
+               <span class="text">Для извлечения корня из числа число нужно возвести в дробную степень. Кубический корень это число в степени 1\3, квадратный корень это число в степени 1\2.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Проверка на пустой обьект</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function isEmpty(obj) {
+                     for (let key in obj) {
+                        return 'ne pustoj';
+                     }
+                     return 'pustoj';
+                  }
+               </pre>
+               <span class="text">Если в обьекте есть хотябы одно свойство то запустится цикл FOR и вернет что обьект не пустой. Иначе цикл не сработает и функция вернет что обьект пустой. Однаок следует учитывать что свойства с символьными клюами не перебираются в цикле и их нужно искать через методы получения ключей свойств обьектa.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Вызов методов обьекта по цепи</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer">Просто проговори</textarea>
+            <div class="con">
+               <pre class="correct"></pre>
+               <span class="text">Вызов методов по цепи это когда мы через точку вызываем последовательно методы одного и того же обьекта. Для этого в конце каждоо метода нужно прописать RETURN THIS чтобы мтод в конце работы возвращал свой родительский обьект.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получение случайного дробного числа в указаном диапазоне min/max. Max не включительно</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function getRandomNumber(min, max) {
+                     return Math.random() * (max - min) + min;
+                  }
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получение случайного целого числа в диапазоне min/max. Max не включительно</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function getRandomInteger(min, max) {
+                     min = Math.ceil(min);
+                     max = Math.floor(max);
+                     return Math.floor(Math.random() * (max - min)) + min;
+                  }
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получение случайного целого числа в диапазоне min/max. Max включительно</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function getRandomIntegerInclusive(min, max) {
+                     min = Math.ceil(min);
+                     max = Math.floor(max);
+                     return Math.floor(Math.random() * (max - min + 1)) + min;
+                  }
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Найти позиции всех вхождений подстроки в строку</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  let str = 'ass we can ass we can';
+                  let text = 'we';
+                  let pos = 0;
+
+                  while(1) {
+                     let foundPos = str.indexOf(text, pos);
+                     if (foundPos == -1) break;
+                     alert(foundPos);
+                     pos = foundPos + 1;
+                  }
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Самый быстрый способ очистить масив</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer">Проговори</textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  arr.length = 0;
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получение максимальной сумы подмасива</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function getMaxSubSum(arr) {
+                     let maxSum = 0;
+                     let parialSum = 0;
+                     for(let item of arr) {
+                        partialSum += item;
+                        maxSum - Math.max(maxSum, partialSum);
+                        if (partialSum < 0) parialSum = 0;
+                     }
+                     return maxSum;
+                  }
+               </pre>
+               <span class="text">Данный алгоритм требует всего один проход по масиву и его уровень сложности равен O(n). Для поиска минимальной сумы подмасива Math.max меняем на Math.min</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Сортировка значений масива</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer">Проговори</textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  arr.sort((a, b) => a - b) //От меньшего к большему
+                  arr.sort((a, b) => b - a) //От большего к меньшему
+                  arr.sort((a, b) => a.localeCompare(b)) //Сортировка строк по алфавиту
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Отсортировать обьекты в масиве по общему свойству этих обьектов</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer">Проговори</textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  arr.sort((a, b) => a.age - b.age)
+               </pre>
+               <span class="text">a и b это сами елементы масива тоесть наши обьекты и дальше мы получаем значения их свойства</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить дату которая будет через определенный отрезок времени</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  let date = new Date();
+                  date.setSeconds(date.getSeconds() + 70);
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить последнее число предыдущего месяца</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  let date = new Date();
+                  date.setDate(0);
+                  date.getDate();
+               </pre>
+               <span class="text">Если в качестве значения для дня установить 0 то вернет последнее число предыдущего месяца</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Исключить из JSON строки свойство по его ключу</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  JSON.stringify(obj, function(key, value) {
+                     return key != 'we' ? undefined : value;
+                  })
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Исключить из JSON строки свойство по его значению</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  JSON.stringify(obj, function(key, value) {
+                     return key != "" && value === 'ass' ? undefined : value;
+                  })
+               </pre>
+               <span class="text">Обязательно нужно писать что ключ не равен пустой строке так как на первй итерации перебора обьекта в функции реплейсере выводит не первое свойство обькта а свойство в котором ключ это пустая строка а значение свойства это сам обьект.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Вычислить факториала числа через рекурсию</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function getFactorial(n) {
+                     if (n == 1) {
+                        return n;
+                     } else {
+                        return n * getFactorial(n - 1);
+                     }
+                  }
+               </pre>
+               <span class="text">Факториал обозначается восклицательным знаком после числа. Факториал означает перемножение всех целых чисел начиная от нашего до 1. Факториал 5 = 120;</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Вычислить числа фибоначи через рекурсию</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function getFib(n) {
+                     if (n <= 1) {
+                        return n;
+                     } else {
+                        return getFib(n - 1) + getFib(n - 2);
+                     }
+                  }
+               </pre>
+               <span class="text">Числа фибоначи это последовательность чисел в которой каждое следующие число равно суме двух пердыдущих. Для определения числа фибонаси есть формула F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub>. Не рекомендуется получать числа фибоначи через рекурсию так как это может потребовать слишком много ресурсов.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить все значения value из связаного списка</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function getValues(obj) {
+                     let tmp = obj;
+                     let box = [];
+                     while(tmp) {
+                        box.push(tmp.value);
+                        tmp = tmp.next;
+                     }
+                     return box;
+                  }
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Применить метод bind ко всем методам обьекта</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  for (let key in obj) {
+                     if (typeof obj[key] === 'function') {
+                        obj[key] = onj[key].bind(this);
+                     }
+                  }
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Клонирование обьекта вместе с его флагами</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+            let clone = Object.definePropertise({}, Object.getOwnPropertyDescriptors(obj));
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Продвинутое клонирование обьекта вместе с его флагами и прототипом</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  let clone = Object.create(Object.getPrototypeOf(obj),<br>                                    Object.getOwnPropertyDescriptors(obj))
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Сделать обьект перебираемым(итерируемым) через короткую версию Symbol.iterator с помощью генераторов</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  let obj = {
+                     from: 0,
+                     to: 1,
+                     *[Symbol.iterator]() {
+                        for (let i = this.start; i <= this.to; i++) {
+                           yield i;
+                        }
+                     },
+                  }
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить полную высоту или полную ширину нашей страницы с учетом прокрутки</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  let maxHeight = Math.max(
+                     document.documentElement.clientHeight,
+                     document.documentElement.offsetHeight,
+                     document.documentElement.scrollHeight,
+                     document.body.clientHeight,
+                     document.body.offsetHeight,
+                     document.body.scrollHeight
+                  )
+               </pre>
+               <span class="text">Нужно применить к елементам HTML и BODY по 3 свойства размера(clientHeight, offsetHeight, scrollHeight) и выбрать наибольшее из них.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить кординаты нашего елемента относительно самой страницы</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  let pageX = elem.getBoundingClientRect().x + window.pageXoffset;
+                  let pageY = elem.getBoundingClientRect().y + window.pageYoffset;
+               </pre>
+               <span class="text">Координаты нашего елемента по отношению к страницы равны ClientX/Y + высота/ширина уже прокурченой области документа</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Срабатывание нашего кода при определенной комбинации клавиш</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function setCombination(func, ...btns) {
+                     let set = new Set();
+                     document.addEventListener('keydown', (event) => {
+                        if (btns.includes(event.key)) {
+                           set.add(event.key);
+                        }
+                        if (btns.every((item) => set.has(item))) {
+                           func();
+                           set.clear();
+                        }
+                     })
+                     document.addEentListener('keyup', (event) => {
+                        set.clear();
+                     })
+                  }
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить текст который находиться в диапазоне выделения обьекта Range</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  range.toStrting();
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить текст который в данный момент выделен на странице</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  document.getSelection().toString();
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить все узлы которые находятся в диапазоне выделеного текста</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  document.getSelection().getRangeAt(0).cloneContents();
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Преобразовать DocumentFragment в масив</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  Array.from(fragment.childList/children);
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Изменить положение каретки в тексте поля ввода input/textarea</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  input.selectionStart = 2;
+                  input.selectionEnd = 2;
+               </pre>
+               <span class="text">Нужно установить для свойств начала и конца выделения одинаковое значение позиции тогда каретка окажется на этой позиции</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Вставить текст на место каретки в тексте поля input/textarea</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  input.setRangeText('text', 1, 1)
+               </pre>
+               <span class="text">Нужно использовать метод setRangeText установив на второй и третий аргументо одинаковую позицию и тогда на эту позицию всавится текст без удаления другого текста в inpute.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+
+
+   </div>
+
+
+
+   <script src="index.js"></script>
+
+</body>
+</html>
