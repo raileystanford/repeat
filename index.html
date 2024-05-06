@@ -688,6 +688,47 @@
          </div>
       </div>
 
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">JS анимация через requestAnimationFrame</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  function anim(time) {
+                    ...
+                    requestAnimationFrame(anim);
+                  }
+
+                  requestAnimationFrame(amin);
+               </pre>
+               <span class="text">Нужно вложить вызов RAF внутрь самого кобека который он будет вызывать а потом вне тела колбека вызвать RAF еще раз с этим же колбеком. Таким образом мы получим бесконечную анимацию которую потом уже настроить можно будит.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Получить время в милисекундах прошедшее с момента когда страница была полностью загружена</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
+
+                  let time = performance.now();
+               </pre>
+               <span class="text"></span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
+
 
 
    </div>
