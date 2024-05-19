@@ -729,7 +729,25 @@
          </div>
       </div>
 
+      <div class="question">
+         <div class="con-title">
+            <span class="question__title">Защита от атаки clickjacking на стороне клиента</span>
+            <span class="close">&times;</span>
+         </div>
+         <div class="container">
+            <textarea class="answer"></textarea>
+            <div class="con">
+               <pre class="correct">
 
+                  if (window.top.document.domain == document.domain) {
+                     block.remove();
+                  }
+               </pre>
+               <span class="text">Создать блок растянуть его на всю ширину высоту вьюпорта сделать его непроницаемым для кликов и прописать следующий JS код. На стороне сервера можно обьявить заголовок X-Frame-Options.</span>
+               <button class="done">СДЕЛАНО!</button>
+            </div>
+         </div>
+      </div>
 
    </div>
 
